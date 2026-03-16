@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="ru" data-page="crystal">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ЖК CRYSTAL — GOLDEN STROY</title>
+  <style>
+    body{
+      margin:0;
+      background:#070d1a;
+      color:#f5f0eb;
+      font-family:Inter,system-ui,sans-serif;
+      display:flex;
+      justify-content:center;
+    }
+
+    .wrap{
+      width:min(860px,92%);
+      margin:40px auto;
+      display:flex;
+      flex-direction:column;
+      gap:16px;
+    }
+
+    a{
+      color:#C9A96E;
+      text-decoration:none;
+      align-self:flex-start;
+    }
+
+    .card{
+      border:1px solid rgba(201,169,110,.25);
+      background:#111a2b;
+      padding:28px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+
+    img{
+      width:30%;
+      max-width:260px;
+      min-width:160px;
+      height:auto;
+      display:block;
+      margin:0;
+    }
+
+    h1{
+      margin:0;
+      font-family:"Playfair Display",serif;
+      letter-spacing:.05em;
+      text-transform:uppercase;
+      line-height:1.25;
+    }
+
+    p{
+      margin:0;
+      color:#d2c8bb;
+      line-height:1.8;
+      max-width:68ch;
+    }
+
+    .lead{
+      margin:0;
+      color:#d2c8bb;
+      line-height:1.8;
+      max-width:72ch;
+    }
+
+    .section-title{
+      margin-top:10px;
+      font-family:"Playfair Display",serif;
+      letter-spacing:.05em;
+      text-transform:uppercase;
+      font-size:1.05rem;
+      color:#C9A96E;
+    }
+
+    .media-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:12px;
+      margin-top:6px;
+    }
+
+    .media-grid .gallery-img{
+      width:100%;
+      min-width:0;
+      max-width:none;
+      border:1px solid rgba(201,169,110,.25);
+      background:#0d1424;
+    }
+
+    .project-video{
+      width:100%;
+      border:1px solid rgba(201,169,110,.25);
+      background:#0d1424;
+      margin-top:6px;
+    }
+
+    .plans-grid{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:12px;
+      margin-top:6px;
+    }
+
+    .plan-card{
+      border:1px solid rgba(201,169,110,.25);
+      background:#0d1424;
+      padding:10px;
+    }
+
+    .plan-card img{
+      width:100%;
+      min-width:0;
+      max-width:none;
+      display:block;
+      margin:0 0 8px;
+    }
+
+    .plan-card p{
+      margin:0;
+      color:#d2c8bb;
+      font-size:.92rem;
+      line-height:1.5;
+      max-width:none;
+    }
+
+    .features-list{
+      margin:8px 0 0;
+      padding:0;
+      list-style:none;
+      display:grid;
+      gap:10px;
+      max-width:78ch;
+    }
+
+    .features-list li{
+      position:relative;
+      padding-left:18px;
+      color:#d2c8bb;
+      line-height:1.7;
+    }
+
+    .features-list li::before{
+      content:"—";
+      position:absolute;
+      left:0;
+      color:#C9A96E;
+    }
+
+    .topbar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+    }
+
+    .lang-switch{
+      display:inline-flex;
+      align-items:center;
+      border:1px solid rgba(201,169,110,.5);
+      background:#0d1424;
+      border-radius:999px;
+      padding:3px;
+      gap:2px;
+    }
+    .lang-btn{
+      min-width:42px;
+      height:30px;
+      border:0;
+      background:transparent;
+      color:#C9A96E;
+      border-radius:999px;
+      font-weight:600;
+      cursor:pointer;
+    }
+    .lang-btn.active{
+      background:#C9A96E;
+      color:#111;
+    }
+
+    @media (max-width:640px){
+      .card{padding:20px}
+      img{width:55%;max-width:none}
+      .media-grid{grid-template-columns:1fr}
+      .plans-grid{grid-template-columns:1fr}
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <p><a href="../index.html" data-i18n="back">← Назад</a></p>
+      <div class="lang-switch" role="group" aria-label="Language switch">
+        <button class="lang-btn" data-lang="ru" aria-pressed="true">RU</button>
+        <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+
+    <article class="card">
+      <img src="../assets/src/crystal-jk.png" alt="ЖК CRYSTAL">
+      <h1 data-i18n="h1">Жилой комплекс «CRYSTAL»</h1>
+
+      <p class="lead" data-i18n="lead">
+        Дом расположен на второй линии проспекта Чынгыза Айтматова — в эпицентре деловой и культурной жизни столицы.
+      </p>
+
+      <ul class="features-list">
+        <li data-i18n="feature1">Все необходимое для комфортной жизни находится в шаговой доступности.</li>
+        <li data-i18n="feature2">На территории предусмотрены workout и детские площадки, а также беседки для отдыха.</li>
+        <li data-i18n="feature3">Круглосуточное видеонаблюдение по периметру (34 камеры) и служба охраны.</li>
+        <li data-i18n="feature4">В квартирах выполнена двойная шумоизоляция: межэтажная и межквартирная.</li>
+        <li data-i18n="feature5">Все материалы, примененные в строительстве, сертифицированы и высокого качества.</li>
+        <li data-i18n="feature6">В продаже остались квартиры со сквозными планировками и видами на разные части города.</li>
+        <li data-i18n="feature7">Жители дебютного ЖК «Ынтымак» снова выбирают нашу компанию и проект «CRYSTAL».</li>
+      </ul>
+
+      <h2 class="section-title" data-i18n="plansTitle">Планировки</h2>
+      <div class="plans-grid">
+        <div class="plan-card">
+          <img src="../assets/src/crystal-plan-1.png" alt="CRYSTAL — планировка 1">
+          <p data-i18n="plan1">1-комнатная • 42 м²</p>
+        </div>
+        <div class="plan-card">
+          <img src="../assets/src/crystal-2-bedroom.png" alt="CRYSTAL — планировка 2-комнатная">
+          <p data-i18n="plan2">2-комнатная</p>
+        </div>
+        <div class="plan-card">
+          <img src="../assets/src/crystal-3-bedroom.png" alt="CRYSTAL — планировка 3-комнатная">
+          <p data-i18n="plan3">3-комнатная</p>
+        </div>
+      </div>
+
+      <h2 class="section-title" data-i18n="galleryTitle">Галерея проекта</h2>
+      <div class="media-grid">
+        <img class="gallery-img" src="../assets/src/crystal-1.png" alt="CRYSTAL — фото 1">
+        <img class="gallery-img" src="../assets/src/crystal-2.png" alt="CRYSTAL — фото 2">
+        <img class="gallery-img" src="../assets/src/crystal-3.png" alt="CRYSTAL — фото 3">
+      </div>
+
+      <h2 class="section-title" data-i18n="videoTitle">Видео проекта</h2>
+      <video class="project-video" controls playsinline preload="metadata">
+        <source src="../assets/src/crystal-4.mp4" type="video/mp4">
+        <source src="../assets/src/crystal-4.mov" type="video/quicktime">
+        <span data-i18n="videoFallback">Ваш браузер не поддерживает воспроизведение видео.</span>
+      </video>
+    </article>
+  </div>
+
+  <script src="../assets/js/project-i18n.js" defer></script>
+</body>
+</html>

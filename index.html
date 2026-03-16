@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GOLDEN STROY — Премиальное строительство в Бишкеке</title>
+  <meta name="description" content="GOLDEN STROY (goldenstroy.kg) — премиальная строительная и девелоперская компания в Бишкеке. Работаем с 2012 года." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    .lang-toggle{
+      margin-left: 10px;
+      min-width: 56px;
+      height: 40px;
+      border: 1px solid rgba(212,175,55,.6);
+      background: rgba(0,0,0,.35);
+      color: #d4af37;
+      border-radius: 999px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: .2s ease;
+    }
+    .lang-toggle:hover{ background: rgba(212,175,55,.12); }
+    .lang-switch{
+      margin-left: 10px;
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(212,175,55,.6);
+      background: rgba(0,0,0,.35);
+      border-radius: 999px;
+      padding: 3px;
+      gap: 2px;
+    }
+    .lang-btn{
+      min-width: 44px;
+      height: 34px;
+      border: 0;
+      background: transparent;
+      color: #d4af37;
+      border-radius: 999px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: .2s ease;
+    }
+    .lang-btn:hover{ background: rgba(212,175,55,.12); }
+    .lang-btn.active{
+      background: #d4af37;
+      color: #111;
+    }
+  </style>
+</head>
+<body>
+  <div class="preloader" id="preloader">
+    <div class="loader-mark">Golden Stroy</div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand">Golden <span>Stroy</span></a>
+
+      <button class="hamburger" id="hamburger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="navMenu">
+        <a href="#about" data-i18n="navAbout">О нас</a>
+        <a href="#objects" data-i18n="navObjects">Объекты</a>
+        <a href="#live" data-i18n="navLive">LIVE</a>
+        <a href="#contacts" data-i18n="navContacts">Контакты</a>
+      </nav>
+
+      <div class="lang-switch" role="group" aria-label="Language switch">
+        <button id="langRu" class="lang-btn" data-lang="ru" aria-pressed="true">RU</button>
+        <button id="langEn" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a href="#contacts" class="btn-gold desktop-cta" data-i18n="contactBtn">Связаться</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <video id="heroVideo" autoplay muted loop playsinline preload="auto">
+        <source src="assets/src/bishkek-background.mp4" type="video/mp4" />
+      </video>
+
+      <div class="container hero-content">
+        <div class="kicker fade-up-init fade-up-in delay-1" data-i18n="heroKicker">Премиальное строительство • Бишкек</div>
+        <h1 class="fade-up-init fade-up-in delay-1" data-i18n="heroTitle">Одна из самых быстрорастущих строительных компаний</h1>
+        <p class="hero-sub fade-up-init fade-up-in delay-2" data-i18n="heroSub">Доверие, заслуженное годами</p>
+      </div>
+    </section>
+
+    <div class="gold-line"></div>
+
+    <section class="stats reveal">
+      <div class="container stats-grid">
+        <article class="stat">
+          <div class="stat-number" data-counter="2012" data-prefix="" data-suffix="">0</div>
+          <div class="stat-text" data-i18n="stat1">Since 2012 — Доверие, заслуженное годами</div>
+        </article>
+        <article class="stat">
+          <div class="stat-number" data-counter="1000000" data-prefix=">" data-suffix=" м²">0</div>
+          <div class="stat-text" data-i18n="stat2">Введено в эксплуатацию</div>
+        </article>
+        <article class="stat">
+          <div class="stat-number" data-counter="3" data-prefix=">" data-suffix="">0</div>
+          <div class="stat-text" data-i18n="stat3">Построили жилых комплексов</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="reveal">
+      <div class="container">
+        <h2 class="section-title" data-i18n="aboutTitle">О нас</h2>
+        <p class="section-lead" data-i18n="aboutLead">
+          GOLDEN STROY (goldenstroy.kg) — премиальная девелоперская и строительная компания в Бишкеке, работающая с 2012 года.
+          Мы создаем жилые и коммерческие пространства высокого класса, где архитектура, инженерия и качество исполнения работают в единой системе.
+        </p>
+      </div>
+    </section>
+
+    <section id="objects" class="objects reveal">
+      <div class="container">
+        <h2 class="section-title" data-i18n="objectsTitle">Объекты</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <img class="project-img" src="assets/src/yntymak-jk.png" alt="Жилой комплекс ЫНТЫМАК">
+            <div class="project-overlay"></div>
+            <div class="project-content">
+              <h3 class="project-title" data-i18n="projectYntymak">Жилой комплекс «ЫНТЫМАК»</h3>
+              <a href="projects/yntymak.html" class="project-link" data-i18n="learnMore">Подробнее →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img class="project-img" src="assets/src/crystal-jk.png" alt="Жилой комплекс CRYSTAL">
+            <div class="project-overlay"></div>
+            <div class="project-content">
+              <h3 class="project-title" data-i18n="projectCrystal">Жилой комплекс «CRYSTAL»</h3>
+              <a href="projects/crystal.html" class="project-link" data-i18n="learnMore">Подробнее →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img class="project-img" src="assets/src/provence-jk.png" alt="Жилой комплекс PROVENCE">
+            <div class="project-overlay"></div>
+            <div class="project-content">
+              <h3 class="project-title" data-i18n="projectProvence">Жилой комплекс «PROVENCE»</h3>
+              <a href="projects/provence.html" class="project-link" data-i18n="learnMore">Подробнее →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img class="project-img" src="assets/src/crystal-jk.png" alt="Coming soon">
+            <div class="project-overlay"></div>
+            <div class="project-content">
+              <h3 class="project-title">Coming soon...</h3>
+              <a href="projects/coming-soon.html" class="project-link" data-i18n="learnMore">Подробнее →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services reveal">
+      <div class="container">
+        <h2 class="section-title" data-i18n="servicesTitle">Направления</h2>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-icon">▦</div>
+            <h3 class="service-title" data-i18n="service1Title">Жилые комплексы</h3>
+            <p class="service-text" data-i18n="service1Text">Современные жилые пространства с акцентом на архитектуру, комфорт и долговечность.</p>
+          </article>
+          <article class="service-card" id="business">
+            <div class="service-icon">▣</div>
+            <h3 class="service-title" data-i18n="service2Title">Бизнес центры</h3>
+            <p class="service-text" data-i18n="service2Text">Функциональные деловые объекты с премиальной инженерной и эстетической составляющей.</p>
+          </article>
+          <article class="service-card" id="fitness">
+            <div class="service-icon">⬢</div>
+            <h3 class="service-title" data-i18n="service3Title">Фитнес клубы</h3>
+            <p class="service-text" data-i18n="service3Text">Высококлассные фитнес-пространства, спроектированные для интенсивной эксплуатации.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="parallax reveal" id="live">
+      <div class="parallax-bg" id="parallaxBg"></div>
+      <div class="container">
+        <h2 class="section-title">LIVE</h2>
+        <p class="section-lead" data-i18n="liveLead">
+          Следите за ходом реализации проектов в LIVE-формате.
+        </p>
+      </div>
+    </section>
+
+    <section class="cta reveal" id="contacts">
+      <div class="container">
+        <h2 data-i18n="ctaTitle">Готовы обсудить ваш проект?</h2>
+        <a href="https://www.instagram.com/goldenstroy.kg/" target="_blank" rel="noreferrer" class="btn-fill" data-i18n="ctaBtn">Связаться с нами</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="media">
+    <div class="container footer-grid">
+      <div>
+        <h3 class="footer-title">Golden Stroy</h3>
+        <p class="footer-text" data-i18n="footerText">Премиальная строительная и девелоперская компания, Бишкек, Кыргызстан. С 2012 года.</p>
+      </div>
+      <div>
+        <h3 class="footer-title" data-i18n="footerNav">Навигация</h3>
+        <a class="footer-link" href="#about" data-i18n="navAbout">О нас</a>
+        <a class="footer-link" href="#objects" data-i18n="navObjects">Объекты</a>
+        <a class="footer-link" href="#services" data-i18n="servicesTitle">Направления</a>
+      </div>
+      <div>
+        <h3 class="footer-title" data-i18n="footerContacts">Контакты</h3>
+        <a class="footer-link" href="https://www.instagram.com/goldenstroy.kg/" target="_blank" rel="noreferrer">@goldenstroy.kg</a>
+        <a class="footer-link" href="https://www.instagram.com/goldenstroy.kg/" target="_blank" rel="noreferrer">Instagram</a>
+        <a class="footer-link" href="#">YouTube</a>
+      </div>
+    </div>
+    <div class="container copyright">© <span id="year"></span> Golden Stroy. All rights reserved.</div>
+  </footer>
+
+  <a class="wa-btn" href="https://wa.me/" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M20.52 3.48A11.85 11.85 0 0 0 12.06 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.6 5.95L0 24l6.35-1.66a11.86 11.86 0 0 0 5.71 1.46h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.45-8.42Zm-8.46 18.3a9.92 9.92 0 0 1-5.06-1.39l-.36-.22-3.77.99 1-3.67-.24-.38a9.9 9.9 0 0 1-1.52-5.22c0-5.45 4.44-9.88 9.9-9.88a9.8 9.8 0 0 1 7.01 2.9 9.83 9.83 0 0 1 2.88 6.99c0 5.46-4.44 9.9-9.84 9.9Zm5.43-7.42c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.66.15-.2.3-.76.97-.93 1.17-.17.2-.35.22-.65.08-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.8-1.68-2.1-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.66-1.6-.91-2.2-.24-.57-.48-.5-.66-.5h-.56c-.2 0-.5.08-.76.38-.26.3-1 1-1 2.45s1.03 2.84 1.18 3.03c.15.2 2.03 3.1 4.93 4.35.69.3 1.23.48 1.65.61.69.22 1.31.19 1.8.12.55-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.08-.12-.28-.2-.58-.35Z"/>
+    </svg>
+  </a>
+  <script src="assets/js/index.js" defer></script>
+</body>
+</html>

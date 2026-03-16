@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru" data-page="provence">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ЖК PROVENCE — GOLDEN STROY</title>
+  <style>
+    body{margin:0;background:#070d1a;color:#f5f0eb;font-family:Inter,system-ui,sans-serif}
+    .wrap{width:min(1000px,92%);margin:40px auto}
+    a{color:#C9A96E;text-decoration:none}
+    .card{border:1px solid rgba(201,169,110,.25);background:#111a2b;padding:24px}
+    img{width:100%;height:auto;display:block;margin:0 0 20px}
+    h1{margin:0 0 12px;font-family:"Playfair Display",serif;letter-spacing:.05em;text-transform:uppercase}
+    p{color:#d2c8bb;line-height:1.7}
+    .plans-grid{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:12px;
+      margin-top:6px;
+    }
+    .plan-card{
+      border:1px solid rgba(201,169,110,.25);
+      background:#0d1424;
+      padding:10px;
+    }
+    .plan-card img{
+      width:100%;
+      min-width:0;
+      max-width:none;
+      display:block;
+      margin:0 0 8px;
+    }
+    .plan-card p{
+      margin:0;
+      color:#d2c8bb;
+      font-size:.92rem;
+      line-height:1.5;
+      max-width:none;
+    }
+    @media (max-width:640px){
+      .plans-grid{grid-template-columns:1fr}
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <p><a href="../index.html" data-i18n="back">← Назад</a></p>
+      <div class="lang-switch" role="group" aria-label="Language switch">
+        <button class="lang-btn" data-lang="ru" aria-pressed="true">RU</button>
+        <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+
+    <article class="card">
+      <img src="../assets/src/provence-jk.png" alt="ЖК PROVENCE">
+      <h1 data-i18n="h1">Жилой комплекс «PROVENCE»</h1>
+
+      <p class="lead" data-i18n="lead">
+        <!-- your existing lead text -->
+      </p>
+
+      <ul class="features-list">
+        <li data-i18n="feature1"><!-- existing --></li>
+        <li data-i18n="feature2"><!-- existing --></li>
+        <li data-i18n="feature3"><!-- existing --></li>
+        <li data-i18n="feature4"><!-- existing --></li>
+      </ul>
+
+      <h2 class="section-title" data-i18n="plansTitle">Планировки</h2>
+      <div class="plans-grid">
+        <div class="plan-card">
+          <img src="../assets/src/provence-plan-1.png" alt="PROVENCE — планировка 1">
+          <p data-i18n="plan1">1-комнатная</p>
+        </div>
+        <div class="plan-card">
+          <img src="../assets/src/provence-plan-2.png" alt="PROVENCE — планировка 2">
+          <p data-i18n="plan2">2-комнатная</p>
+        </div>
+        <div class="plan-card">
+          <img src="../assets/src/provence-plan-3.png" alt="PROVENCE — планировка 3">
+          <p data-i18n="plan3">3-комнатная</p>
+        </div>
+      </div>
+
+      <h2 class="section-title" data-i18n="galleryTitle">Галерея проекта</h2>
+      <!-- ...existing code... -->
+
+      <h2 class="section-title" data-i18n="videoTitle">Видео проекта</h2>
+      <video class="project-video" controls playsinline preload="metadata">
+        <!-- ...existing code... -->
+        <span data-i18n="videoFallback">Ваш браузер не поддерживает воспроизведение видео.</span>
+      </video>
+    </article>
+  </div>
+
+  <script src="../assets/js/project-i18n.js" defer></script>
+</body>
+</html>
